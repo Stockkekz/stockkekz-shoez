@@ -1,0 +1,29 @@
+export interface Product {
+    id: string;
+    brand_name: string;
+    category: string[];
+    collection_slugs: string[];
+    color: string;
+    designer: string;
+    details: string;
+    gender: string[];
+    grid_pic_url: string;
+    main_pic_url: string;
+    orig_pic_url: string;
+    has_pic: boolean;
+    has_stock: boolean;
+    keywords: string[];
+    midsole: string;
+    name: string;
+    nickname: string;
+    release_date_unix: number;
+    release_year: number;
+    retail_price_cents: number;
+    silhouette: string;
+    sizes: number[];
+    sku: string;
+    slug: string;
+    status: string;
+    description: string;
+    upper_material: string;
+}
