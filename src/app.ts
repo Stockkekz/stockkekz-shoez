@@ -1,13 +1,12 @@
 import "dotenv/config";
 import express from "express";
 import { initDB } from "./db";
+import mountRoutes from "./routes";
 
 const app = express();
-const port = process.env.PORT;
+const port = parseInt(process.env.PORT);
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
+mountRoutes(app);
 
 initDB();
 
